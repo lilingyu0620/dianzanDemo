@@ -42,6 +42,7 @@
     CGPoint point = [aTouch locationInView:self.view];
     
     LoveView *view = [[LoveView alloc]initWithFrame:CGRectMake(point.x-20,point.y-20, 40, 40)];
+    [view setUserInteractionEnabled:NO];
     view.backgroundColor = [UIColor clearColor];
     [view drawRect:CGRectMake(point.x-20,point.y-20, 40, 40)];
     [view animationInView:self.view];
